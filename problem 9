@@ -1,0 +1,142 @@
+code 1#include <iostream>
+using namespace std;
+
+int main()
+{
+    int num;
+
+    cout << "Enter a number: ";
+    cin >> num;
+
+    if (num == 0)
+    {
+        cout << "The number is Zero.";
+    }
+
+    return 0;
+}
+code 2
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int age;
+
+    cout << "Enter your age: ";
+    cin >> age;
+
+    if (age >= 18)
+    {
+        cout << "Eligible to donate blood.";
+    }
+    else
+    {
+        cout << "Not eligible to donate blood.";
+    }
+
+    return 0;
+}
+code 3
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int percentage;
+
+    cout << "Enter your percentage: ";
+    cin >> percentage;
+
+    if (percentage >= 80)
+    {
+        cout << "First Division";
+    }
+    else if (percentage >= 60)
+    {
+        cout << "Second Division";
+    }
+    else if (percentage >= 40)
+    {
+        cout << "Third Division";
+    }
+    else
+    {
+        cout << "Fail";
+    }
+
+    return 0;
+}
+code 4
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int choice;
+
+    cout << "1. Spring" << endl;
+    cout << "2. Summer" << endl;
+    cout << "3. Autumn" << endl;
+    cout << "4. Winter" << endl;
+
+    cout << "Enter your choice: ";
+    cin >> choice;
+
+    switch(choice)
+    {
+        case 1:
+            cout << "You selected Spring.";
+            break;
+
+        case 2:
+            cout << "You selected Summer.";
+            break;
+
+        case 3:
+            cout << "You selected Autumn.";
+            break;
+
+        case 4:
+            cout << "You selected Winter.";
+            break;
+
+        default:
+            cout << "Invalid Choice.";
+    }
+
+    return 0;
+}
+code 5
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int age;
+    char student;
+
+    cout << "Enter your age: ";
+    cin >> age;
+
+    cout << "Are you a student? (Y/N): ";
+    cin >> student;
+
+    if (age >= 16)
+    {
+        if (student == 'Y' || student == 'y')
+        {
+            cout << "You can get a library membership.";
+        }
+        else
+        {
+            cout << "Only students are eligible.";
+        }
+    }
+    else
+    {
+        cout << "You must be at least 16 years old.";
+    }
+
+    return 0;
+}
