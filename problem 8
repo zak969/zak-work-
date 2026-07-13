@@ -1,0 +1,142 @@
+code 1
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int num;
+
+    cout << "Enter a number: ";
+    cin >> num;
+
+    if (num < 50)
+    {
+        cout << "The number is less than 50.";
+    }
+
+    return 0;
+}
+code 2
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int age;
+
+    cout << "Enter your age: ";
+    cin >> age;
+
+    if (age >= 60)
+    {
+        cout << "Eligible for Senior Citizen Discount.";
+    }
+    else
+    {
+        cout << "Not Eligible for Discount.";
+    }
+
+    return 0;
+}
+code 3
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    float bmi;
+
+    cout << "Enter your BMI: ";
+    cin >> bmi;
+
+    if (bmi < 18.5)
+    {
+        cout << "Underweight";
+    }
+    else if (bmi < 25)
+    {
+        cout << "Normal Weight";
+    }
+    else if (bmi < 30)
+    {
+        cout << "Overweight";
+    }
+    else
+    {
+        cout << "Obese";
+    }
+
+    return 0;
+}
+code 4
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int choice;
+
+    cout << "1. Jazz" << endl;
+    cout << "2. Zong" << endl;
+    cout << "3. Telenor" << endl;
+    cout << "4. Ufone" << endl;
+
+    cout << "Enter your choice: ";
+    cin >> choice;
+
+    switch(choice)
+    {
+        case 1:
+            cout << "Jazz Selected";
+            break;
+
+        case 2:
+            cout << "Zong Selected";
+      #include <iostream>
+using namespace std;
+
+int main()
+{
+    int salary;
+    char employed;
+
+    cout << "Enter your monthly salary: ";
+    cin >> salary;
+
+    cout << "Are you employed? (Y/N): ";
+    cin >> employed;
+
+    if (salary >= 50000)
+    {
+        if (employed == 'Y' || employed == 'y')
+        {
+            cout << "You are eligible for a bank loan.";
+        }
+        else
+        {
+            cout << "Employment is required.";
+        }
+    }
+    else
+    {
+        cout << "Salary is too low for a loan.";
+    }
+
+    return 0;
+}      break;
+
+        case 3:
+            cout << "Telenor Selected";
+            break;
+
+        case 4:
+            cout << "Ufone Selected";
+            break;
+
+        default:
+            cout << "Invalid Choice";
+    }
+
+    return 0;
+}
+code 5
