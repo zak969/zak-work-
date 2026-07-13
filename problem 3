@@ -1,0 +1,162 @@
+code 1
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int marks;
+
+    cout << "Enter your marks: ";
+    cin >> marks;
+
+    if (marks >= 50)
+    {
+        cout << "You have passed the exam.";
+    }
+
+    return 0;
+}
+code 2
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int age;
+
+    cout << "Enter your age: ";
+    cin >> age;
+
+    if (age >= 18)
+    {
+        cout << "You are an Adult.";
+    }
+    else
+    {
+        cout << "You are a Child.";
+    }
+
+    return 0;
+}
+code 3
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int temp;
+
+    cout << "Enter temperature: ";
+    cin >> temp;
+
+    if (temp >= 40)
+    {
+        cout << "Very Hot";
+    }
+    else if (temp >= 30)
+    {
+        cout << "Hot";
+    }
+    else if (temp >= 20)
+    {
+        cout << "Warm";
+    }
+    else if (temp >= 10)
+    {
+        cout << "Cold";
+    }
+    else
+    {
+        cout << "Very Cold";
+    }
+
+    return 0;
+}
+code 4
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int month;
+
+    cout << "Enter month number (1-12): ";
+    cin >> month;
+
+    switch(month)
+    {
+        case 1:
+            cout << "January";
+            break;
+        case 2:
+            cout << "February";
+            break;
+        case 3:
+            cout << "March";
+            break;
+        case 4:
+            cout << "April";
+            break;
+        case 5:
+            cout << "May";
+            break;
+        case 6:
+            cout << "June";
+            break;
+        case 7:
+            cout << "July";
+            break;
+        case 8:
+            cout << "August";
+            break;
+        case 9:
+            cout << "September";
+            break;
+        case 10:
+            cout << "October";
+            break;
+        case 11:
+            cout << "November";
+            break;
+        case 12:
+            cout << "December";
+            break;
+        default:
+            cout << "Invalid Month";
+    }
+
+    return 0;
+}
+code 5
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int age;
+    char graduate;
+
+    cout << "Enter your age: ";
+    cin >> age;
+
+    cout << "Are you a graduate? (Y/N): ";
+    cin >> graduate;
+
+    if (age >= 21)
+    {
+        if (graduate == 'Y' || graduate == 'y')
+        {
+            cout << "You can apply for the government job.";
+        }
+        else
+        {
+            cout << "Graduation is required.";
+        }
+    }
+    else
+    {
+        cout << "You must be at least 21 years old.";
+    }
+
+    return 0;
+}
