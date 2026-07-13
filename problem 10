@@ -1,0 +1,143 @@
+code 1
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int num;
+
+    cout << "Enter a number: ";
+    cin >> num;
+
+    if (num <= 100)
+    {
+        cout << "The number is less than or equal to 100.";
+    }
+
+    return 0;
+}
+code2
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int num;
+
+    cout << "Enter a number: ";
+    cin >> num;
+
+    if (num % 3 == 0)
+    {
+        cout << "The number is divisible by 3.";
+    }
+    else
+    {
+        cout << "The number is not divisible by 3.";
+    }
+
+    return 0;
+}
+code 3
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int attendance;
+
+    cout << "Enter attendance percentage: ";
+    cin >> attendance;
+
+    if (attendance >= 90)
+    {
+        cout << "Excellent Attendance";
+    }
+    else if (attendance >= 75)
+    {
+        cout << "Good Attendance";
+    }
+    else if (attendance >= 50)
+    {
+        cout << "Average Attendance";
+    }
+    else
+    {
+        cout << "Poor Attendance";
+    }
+
+    return 0;
+}
+code 4
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int choice;
+
+    cout << "1. Apple" << endl;
+    cout << "2. Banana" << endl;
+    cout << "3. Mango" << endl;
+    cout << "4. Orange" << endl;
+
+    cout << "Enter your choice: ";
+    cin >> choice;
+
+    switch(choice)
+    {
+        case 1:
+            cout << "You selected Apple.";
+            break;
+
+        case 2:
+            cout << "You selected Banana.";
+            break;
+
+        case 3:
+            cout << "You selected Mango.";
+            break;
+
+        case 4:
+            cout << "You selected Orange.";
+            break;
+
+        default:
+            cout << "Invalid Choice.";
+    }
+
+    return 0;
+}
+code 5
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int age;
+    char fit;
+
+    cout << "Enter your age: ";
+    cin >> age;
+
+    cout << "Are you medically fit? (Y/N): ";
+    cin >> fit;
+
+    if (age >= 18)
+    {
+        if (fit == 'Y' || fit == 'y')
+        {
+            cout << "You are eligible to join the sports team.";
+        }
+        else
+        {
+            cout << "You must be medically fit.";
+        }
+    }
+    else
+    {
+        cout << "You must be at least 18 years old.";
+    }
+
+    return 0;
+}
