@@ -1,0 +1,142 @@
+code 1
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    char ch;
+
+    cout << "Enter a character: ";
+    cin >> ch;
+
+    if (ch >= 'A' && ch <= 'Z')
+    {
+        cout << "The character is Uppercase.";
+    }
+
+    return 0;
+}
+code 2
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int num;
+
+    cout << "Enter a number: ";
+    cin >> num;
+
+    if (num >= 0)
+    {
+        cout << "Positive Number";
+    }
+    else
+    {
+        cout << "Negative Number";
+    }
+
+    return 0;
+}
+code 3
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int a, b, c;
+
+    cout << "Enter three numbers: ";
+    cin >> a >> b >> c;
+
+    if (a >= b && a >= c)
+    {
+        cout << "Largest Number = " << a;
+    }
+    else if (b >= a && b >= c)
+    {
+        cout << "Largest Number = " << b;
+    }
+    else
+    {
+        cout << "Largest Number = " << c;
+    }
+
+    return 0;
+}
+code 4
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    char ch;
+
+    cout << "Enter a vowel (A, E, I, O, U): ";
+    cin >> ch;
+
+    switch(ch)
+    {
+        case 'A':
+        case 'a':
+            cout << "You entered A";
+            break;
+
+        case 'E':
+        case 'e':
+            cout << "You entered E";
+            break;
+
+        case 'I':
+        case 'i':
+            cout << "You entered I";
+            break;
+
+        case 'O':
+        case 'o':
+            cout << "You entered O";
+            break;
+
+        case 'U':
+        case 'u':
+            cout << "You entered U";
+            break;
+
+        default:
+            cout << "Not a vowel";
+    }
+
+    return 0;
+}
+code 5
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int marks, attendance;
+
+    cout << "Enter marks: ";
+    cin >> marks;
+
+    cout << "Enter attendance percentage: ";
+    cin >> attendance;
+
+    if (marks >= 50)
+    {
+        if (attendance >= 75)
+        {
+            cout << "You passed the exam.";
+        }
+        else
+        {
+            cout << "Insufficient attendance.";
+        }
+    }
+    else
+    {
+        cout << "You failed the exam.";
+    }
+
+    return 0;
+}
