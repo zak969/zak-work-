@@ -1,0 +1,146 @@
+code 1
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int num;
+
+    cout << "Enter a number: ";
+    cin >> num;
+
+    if (num % 10 == 0)
+    {
+        cout << "The number is a multiple of 10.";
+    }
+
+    return 0;
+}
+code 2
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int marks;
+
+    cout << "Enter your marks: ";
+    cin >> marks;
+
+    if (marks >= 40)
+    {
+        cout << "Pass";
+    }#include <iostream>
+using namespace std;
+
+int main()
+{
+    int score;
+
+    cout << "Enter your score: ";
+    cin >> score;
+
+    if (score >= 90)
+    {
+        cout << "Exce#include <iostream>
+using namespace std;
+
+int main()
+{
+    int choice;
+
+    cout << "1. Addition" << endl;
+    cout << "2. Subtraction" << endl;
+    cout << "3. Multiplication" << endl;
+    cout << "4. Division" << endl;
+
+    cout << "Enter your choice: ";
+    cin >> choice;
+
+    switch(choice)
+    {
+        case 1:
+            cout << "Addition Selected";
+            break;
+
+        case 2:
+            cout << "Subtraction Selected";
+            break;
+
+        case 3:
+            cout << "Multiplication Selected";
+            break;
+
+        case 4:
+            cout << "Division Selected";
+            break;
+
+        default:
+            cout << "Invalid Choice";
+    }
+
+    return 0;
+}llent";
+    }
+    else if (score >= 75)
+    {
+        cout << "Very Good";
+    }
+    else if (score >= 60)
+    {
+        cout << "Good";
+    }
+    else if (score >= 40)
+    {
+        cout << "Average";
+    }
+    else
+    {
+        cout << "Poor";
+    }
+
+    return 0;
+}
+code 4
+
+    else
+    {
+        cout << "Fail";
+    }
+
+    return 0;
+}
+code 3
+code 5
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int distance;
+    char enrolled;
+
+    cout << "Enter distance from college (km): ";
+    cin >> distance;
+
+    cout << "Are you enrolled in the university? (Y/N): ";
+    cin >> enrolled;
+
+    if (distance >= 30)
+    {
+        if (enrolled == 'Y' || enrolled == 'y')
+        {
+            cout << "You are eligible for a hostel.";
+        }
+        else
+        {
+            cout << "You must be enrolled first.";
+        }
+    }
+    else
+    {
+        cout << "You live too close to the university.";
+    }
+
+    return 0;
+}
