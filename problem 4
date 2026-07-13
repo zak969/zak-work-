@@ -1,0 +1,137 @@
+code 1
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int num;
+
+    cout << "Enter a number: ";
+    cin >> num;
+
+    if (num % 5 == 0)
+    {
+        cout << "The number is divisible by 5.";
+    }
+
+    return 0;
+}
+code 2
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int year;
+
+    cout << "Enter a year: ";
+    cin >> year;
+
+    if (year % 4 == 0)
+    {
+        cout << "Leap Year";
+    }
+    else
+    {
+        cout << "Not a Leap Year";
+    }
+
+    return 0;
+}
+code 3
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int units;
+
+    cout << "Enter electricity units: ";
+    cin >> units;
+
+    if (units <= 100)
+    {
+        cout << "Low Bill";
+    }
+    else if (units <= 200)
+    {
+        cout << "Medium Bill";
+    }
+    else if (units <= 300)
+    {
+        cout << "High Bill";
+    }
+    else
+    {
+        cout << "Very High Bill";
+    }
+
+    return 0;
+}
+code 4
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int choice;
+
+    cout << "1. Circle" << endl;
+    cout << "2. Rectangle" << endl;
+    cout << "3. Triangle" << endl;
+    cout << "Enter your choice: ";
+    cin >> choice;
+
+    switch (choice)
+    {
+        case 1:
+            cout << "You selected Circle.";
+            break;
+
+        case 2:
+            cout << "You selected Rectangle.";
+            break;
+
+        case 3:
+            cout << "You selected Triangle.";
+            break;
+
+        default:
+            cout << "Invalid Choice.";
+    }
+
+    return 0;
+}
+code 5
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    float cgpa;
+    char income;
+
+    cout << "Enter your CGPA: ";
+    cin >> cgpa;
+
+    cout << "Is your family income low? (Y/N): ";
+    cin >> income;
+
+    if (cgpa >= 3.5)
+    {
+        if (income == 'Y' || income == 'y')
+        {
+            cout << "You are eligible for a scholarship.";
+        }
+        else
+        {
+            cout << "CGPA is good, but income criteria not met.";
+        }
+    }
+    else
+    {
+        cout << "CGPA is too low for a scholarship.";
+    }
+
+    return 0;
+}
